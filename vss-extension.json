@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "third-party-upload",
   "version": "0.0.1",
-  "name": "Finite State Third-Party Upload",
+  "name": "Third-Party Upload",
   "publisher": "finite-state",
   "public": false,
   "description": "Upload a third-party scan to the Finite State Platform for analysis.",
