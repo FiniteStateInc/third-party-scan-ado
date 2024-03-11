@@ -1,0 +1,6 @@
+.git
+.vscode
+*.vsix
+secrets.md
+token
+**/*.log

@@ -1,0 +1,69 @@
+{
+  "manifestVersion": 1,
+  "id": "third-party-upload",
+  "version": "0.0.1",
+  "name": "Finite State Third-Party Upload",
+  "publisher": "finite-state",
+  "public": false,
+  "description": "Upload a third-party scan to the Finite State Platform for analysis.",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "screenshots": [
+    {
+      "path": "images/screenshots/pr_comment.png"
+    },
+    {
+      "path": "images/screenshots/pipeline_configuration.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "Marketplace.md"
+    },
+    "license": {
+      "path": "LICENSE"
+    }
+  },
+  "icons": {
+    "default": "images/service-logo.png"
+  },
+  "files": [
+    {
+      "path": "Tasks/thirdPartyUpload"
+    },
+    {
+      "path": "images",
+      "addressable": true
+    }
+  ],
+  "links": {
+    "getstarted": {
+        "uri": "https://github.com/FiniteStateInc/third-party-upload-ado/blob/main/Marketplace.md"
+    },
+    "support": {
+        "uri": "https://finitestate.io/contact/"
+    }
+  },
+  "branding": {
+      "color": "rgb(34, 34, 34)",
+      "theme": "dark"
+  },
+  "contributions": [
+    {
+      "id": "thirdPartyUpload",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Tasks/thirdPartyUpload"
+      }
+    }
+  ]
+}
