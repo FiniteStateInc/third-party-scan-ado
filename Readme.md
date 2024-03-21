@@ -10,7 +10,7 @@ Here you will find how this [extension was build](https://learn.microsoft.com/en
 
 Our extension executes a [js file](./Tasks/thirdPartyUpload/main.js). In that file we execute our python script that uploads the binary other functionality like adding a comment to a PR.
 
-You could see the extension documentation itself [here](Marketplace.md)
+You can see the extension documentation itself [here](Marketplace.md)
 
 ## Release a new Version
 
