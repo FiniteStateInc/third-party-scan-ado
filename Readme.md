@@ -6,7 +6,7 @@
 
 The Finite State `third-party-upload` Extension allows you to easily integrate the Finite State Platform into your Azure Devops Pipeline.
 
-Here you will find how this [extension was build](https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-build-task?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops) and how to release a new version of the extension.
+Here you will find how this [extension was built](https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-build-task?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&view=azure-devops) and how to release a new version of the extension.
 
 Our extension executes a [js file](./Tasks/thirdPartyUpload/main.js). In that file we execute our python script that uploads the binary other functionality like adding a comment to a PR.
 
