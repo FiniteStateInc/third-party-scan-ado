@@ -1,16 +1,16 @@
 {
   "id": "4dab1a3f-7508-4b4e-92ff-4d7a7b653ab8",
   "name": "Finite-State-Third-Party-Upload",
-  "friendlyName": "Finite state Third Party Upload",
-  "instanceNameFormat": "Finite state Third Party Upload",
-  "description": "The `third-party-upload` Github Action allows you to integrate Finite State's third-party upload scanning capabilities into your workflow.",
-  "author": "Christian Pfarher",
+  "friendlyName": "Finite State Third-Party Upload",
+  "instanceNameFormat": "Finite State Third-Party Upload",
+  "description": "The `third-party-upload` Azure Extension allows you to integrate Finite State's third-party upload scanning capabilities into your workflow.",
+  "author": "Finite State",
   "category": "Utility",
   "visibility": ["Build", "Release"],
   "version": {
-    "Major": 0,
+    "Major": 1,
     "Minor": 0,
-    "Patch": 1
+    "Patch": 0
   },
   "inputs": [
     {

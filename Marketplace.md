@@ -5,15 +5,15 @@
 
 ## Description
 
-The `third-party-upload` Github Action allows you to integrate Finite State's third-party upload scanning capabilities into your workflow.
+The `third-party-upload` Extension allows you to easily integrate the Finite State Platform into your Azure Devops Pipeline.
 
-The action will:
+Following the steps below will: 
+* Upload the file to the Finite State platform
+* Create a new version of the configured asset
+* Upload your third-party scan to the Finite State Platform
+* Associate the results to the asset version
 
-- Create a new asset version for an existing asset
-- Upload the SBOM, scan, or test output
-- Associate the results with the new asset version
-
-By default, the new version adopts the asset's existing values for Business Unit and Created By User. If you need to change these, you can provide IDs for them.
+By default, the asset version will be assigned the existing values for Business Unit and Created By User. If you need to change these, you can provide the IDs for them.
 
 ## Inputs
 
@@ -57,14 +57,14 @@ If you want the extension to automatically generate a PR comment with the link t
 
 ![Give token permissions](images/screenshots/token_permissions.png)
 
-This allows the action to post the comment in the PR when the `automaticComment` is checked (`true`). After this step, you will get a comment in the PR with a link that points to the binary uploaded in the Finite State Platform:
+This allows the extension to post a comment in the PR when the `automaticComment` is checked (`true`). After this step, you will get a comment in the PR with a link that points to the third-party scan uploaded to the Finite State Platform:
 
 ![Azure PR automatic comment](images/screenshots/pr_comment.png)
 
 ### Build Policy
 You will need to configure a build policy over your main branch in order to auto start a build process. This way, when you make a modification to a branch that has a PR associated with it, the pipeline will be executed automatically and generate a comment using the task configured.
 
-To set up a policy, you need to go to `Repositories > Branches`. Then click on the three point in your main branch and select Branch policies in the dropdown menu:
+To set up a policy, you need to go to `Repositories > Branches`. Then click on the options in your main branch and select Branch policies in the dropdown menu:
 
 ![Azure Branch policies](images/screenshots/branch_policies.png)
 
@@ -76,7 +76,7 @@ After that, you will see a configuration option similar to this:
 
 ![Azure main policy enabled](images/screenshots/build_policy_main_enabled.png)
 
-Going forward, each commit to a branch associated with a PR that is requested to be merge to the main branch will trigger the pipeline execution automatically and execute the Finite State task:
+Going forward, each commit to a branch associated with a PR that is requested to be merged to the main branch will trigger the pipeline execution automatically and execute the Finite State task:
 
 ![Azure auto trigger on PR](images/screenshots/pr_trigger.png)
 
@@ -89,11 +89,11 @@ The extension will show some information/details about the result of the executi
 
 All details pertaining to the execution of the extension will be recorded. You can review this information in the workflow execution logs, which is a helpful starting point if you encounter any errors during the extension's run.
 
-If you have any errors, we recommend to enabling the System diagnostics whe you run the pipeline:
+If you have any errors, we recommend to enabling the System diagnostics when you run the pipeline:
 
 ![System diagnostics enabled](images/screenshots/pipline_system_diagnostics.png)
 
 
-Example of the output when system diagnostics is enabled:
+Example of the output when system diagnostics are enabled:
 
 ![System diagnostics results](images/screenshots/pipline_system_diagnostics_result.png)

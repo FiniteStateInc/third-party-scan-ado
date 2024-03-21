@@ -1,10 +1,10 @@
 {
   "manifestVersion": 1,
   "id": "third-party-upload",
-  "version": "0.0.1",
-  "name": "Third-Party Upload",
+  "version": "1.0.0",
+  "name": "Finite State Third-Party Upload",
   "publisher": "finite-state",
-  "public": false,
+  "public": true,
   "description": "Upload a third-party scan to the Finite State Platform for analysis.",
   "targets": [
     {
