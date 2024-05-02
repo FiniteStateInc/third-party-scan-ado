@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "third-party-upload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Finite State Third-Party Upload",
   "publisher": "finite-state",
   "public": true,
