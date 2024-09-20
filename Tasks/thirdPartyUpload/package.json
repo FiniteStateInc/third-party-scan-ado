@@ -1,6 +1,6 @@
 {
   "name": "thirdPartyUpload",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Upload a third-party scan to the Finite State Platform for analysis.",
   "main": "main.js",
   "scripts": {
