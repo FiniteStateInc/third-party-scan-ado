@@ -5,7 +5,7 @@
   "name": "Finite State Third-Party Upload",
   "publisher": "finite-state",
   "public": true,
-  "description": "Upload a third-party scan to the Finite State Platform for analysis.",
+  "description": "DEPRECATED — replaced by Finite State Analysis (finite-state.finite-state-analysis-extension). This extension is no longer maintained.",
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
